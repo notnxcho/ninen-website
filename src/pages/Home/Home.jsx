@@ -1,3 +1,4 @@
+import CtaBannerSection from '../../components/ctaBannerSection/ctaBannerSection';
 import Navbar from '../../components/navbar/navbar'
 import PerkCards from '../../components/perkCards/perkCards';
 import TextCarousel from '../../components/textCarousel/textCarousel';
@@ -44,10 +45,23 @@ const Home = () => {
                                 'technical partner',
                                 'product designer',
                                 'digital strategist',
-                                'problem solver'
+                                'problem solver',
                             ]}
                         />
                         <div className="title-block">for your business</div>
+                        <div className="horizontal-brand-line" style={{bottom: -12}}/>
+                    </div>
+                    <PerkCards/>
+                </div>
+            </div>
+            <CtaBannerSection 
+                displayText={'Are you ready for your next smart move?'}
+                ctaText={'Work with us'}
+            />
+            <div className="info-section">
+                <div className="info-section-content container">
+                    <div className="info-section-title-wrap">
+                        <div className="title-block">It’s easy to work with us</div>
                         <div className="horizontal-brand-line" style={{bottom: -12}}/>
                     </div>
                     <PerkCards/>

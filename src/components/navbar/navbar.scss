@@ -1,0 +1,25 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 44px;
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        font-size: 20px;
+        font-weight: 500;
+        .link {
+            color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            pointer-events: auto;
+            &:hover {
+                transform: translateY(-4px);
+                color: black;
+            }
+        }
+    }
+}

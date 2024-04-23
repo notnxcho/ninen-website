@@ -1,0 +1,141 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    // background-color: #f0f0f0;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid rgba(110, 96, 96, 0.16);
+    border-bottom: 1px solid rgba(110, 96, 96, 0.16);
+    .spline-scene-wrapper {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.container {
+    width: 1080px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-right: 1px solid rgba(110, 96, 96, 0.16);
+    border-left: 1px solid rgba(110, 96, 96, 0.16);
+    @media (max-width: 1200px) {
+        width: 780px;
+    }
+    @media (max-width: 820px) {
+        width: calc(100vw - 24px);
+    }
+}
+.horizontal-brand-line {
+    width: 10px;
+    height: 1px;
+    transform: scaleX(1000);
+    background-color: rgba(110, 96, 96, 0.16);
+    position: absolute;
+}
+.vertical-brand-line {
+    width: 1px;
+    height: 10px;
+    transform: scaleY(1000);
+    background-color: rgba(110, 96, 96, 0.16);
+    position: absolute;
+}
+.hero {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    pointer-events: none;
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        flex-grow: 1;
+        justify-content: center;
+        padding-bottom: calc(44px + 8vh);
+        .hero-title {
+            display: flex;
+            flex-direction: column;
+            max-width: 520px;
+            color: #000;
+            // font-family: "Clash Grotesk Variable";
+            font-size: 48px;
+            font-weight: 500;
+            position: relative;
+        }
+        .hero-subtitle {
+            max-width: 480px;
+            color: black;
+            opacity: 0.64;
+            // font-family: "Clash Grotesk Variable";
+            font-size: 28px;
+            font-weight: 400;
+            position: relative;
+        }
+        .cta-wrap {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 24px;
+            position: relative;
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 16px 24px;
+                border-radius: 4px;
+                font-weight: 500;
+                font-size: 20px;
+                gap: 12px;
+                cursor: pointer;
+                transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+                pointer-events: auto;
+                &:hover {
+                    transform: translateY(-4px);
+                }
+            }
+            .primary {
+                background-color: #000;
+                color: white;
+            }
+            .secondary {
+                background-color: rgba(0, 0, 0, 0.05);
+                color: rgba(0, 0, 0, 0.64);
+            }
+        }
+    }
+}
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    overflow: hidden;
+    width: 100%;
+    .info-section-title-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 32px;
+        font-weight: 500;
+        position: relative;
+    }
+    .info-section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 44px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+

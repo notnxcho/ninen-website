@@ -1,3 +1,7 @@
+import ArrowIcon from '../../assets/icons/arrowIcon';
+import StacksIcon from '../../assets/icons/stacksIcon';
+import EarthIcon from '../../assets/icons/earthIcon';
+import CircledCurrencyIcon from '../../assets/icons/circledCurrencyIcon';
 import CtaBannerSection from '../../components/ctaBannerSection/ctaBannerSection';
 import Navbar from '../../components/navbar/navbar'
 import PerkCards from '../../components/perkCards/perkCards';
@@ -30,7 +34,10 @@ const Home = () => {
                         </div>
                         <div className="cta-wrap">
                             <div className="horizontal-brand-line" style={{bottom: -12}}/>
-                            <div className="button primary">Get started</div>
+                            <div className="button primary">
+                                Get started 
+                                <ArrowIcon/>
+                            </div>
                             <div className="button secondary">See our work</div>
                         </div>
                     </div>
@@ -64,7 +71,11 @@ const Home = () => {
                         <div className="title-block">It’s easy to work with us</div>
                         <div className="horizontal-brand-line" style={{bottom: -12}}/>
                     </div>
-                    <PerkCards/>
+                    <PerkCards items={[
+                        {title: 'Hire flexible development volume', subtitle: "You can dial us up or down, based on your needs. Always making right-sized investments for the stage you're at.", icon: <StacksIcon/> },
+                        {title: 'Aligned with your timezone', subtitle: "Based in Montevideo, Uruguay, our timezone allows us to work  with a small hour difference. -2 for EST and -4 for PST.", icon: <EarthIcon/> },
+                        {title: 'Smart usage of your resources', subtitle: "We follow the Lean Startup framework to build products, reducing time to value and learning from real users.", icon: <CircledCurrencyIcon/> }
+                    ]}/>
                 </div>
             </div>
         </div>

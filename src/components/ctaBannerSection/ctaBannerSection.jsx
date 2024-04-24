@@ -1,10 +1,16 @@
+import ArrowIcon from '../../assets/icons/arrowIcon'
 import './ctaBannerSectionStyles.scss'
 
 const CtaBannerSection = ({displayText, ctaText}) => {
     return (
-        <div className='banner-section-container container'>
-            <div className='banner-text'>{displayText}</div>
-            <div className='banner-cta'>{ctaText}</div>
+        <div className='banner-section-box'>
+            <div className='banner-section-container container'>
+                <div className='banner-text'>{displayText}</div>
+                <div className='banner-cta'>
+                    {ctaText}
+                    <ArrowIcon size={36} stroke='#000'/>
+                </div>
+            </div>
         </div>
     )
 }

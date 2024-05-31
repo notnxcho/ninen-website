@@ -10,6 +10,9 @@
     width: 280px;
     height: 40px;
     transition: width 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    @media (max-width: 440px) {
+      font-size: 28px;
+    }
   }
   
   .text {

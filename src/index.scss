@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 code {
@@ -25,3 +26,14 @@ code {
     width: calc(100vw - 24px);
   }
 }
+
+.container-width {
+  width: 1080px;
+  @media (max-width: 1200px) {
+    width: 780px;
+  }
+  @media (max-width: 820px) {
+    width: calc(100vw - 24px);
+  }
+}
+

@@ -55,6 +55,7 @@
     flex-direction: column;
     min-height: 100vh;
     pointer-events: none;
+    gap: 44px;
     .hero-content {
         display: flex;
         flex-direction: column;
@@ -62,12 +63,20 @@
         flex-grow: 1;
         justify-content: center;
         padding-bottom: calc(44px + 8vh);
+        transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+        &.in-view {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        &.hide-in-view {
+            opacity: 0;
+            transform: translateX(40px);
+        }
         .hero-title {
             display: flex;
             flex-direction: column;
             max-width: 520px;
             color: #000;
-            // font-family: "Clash Grotesk Variable";
             font-size: 48px;
             font-weight: 500;
             position: relative;
@@ -99,6 +108,15 @@
             gap: 16px;
             margin-top: 24px;
             position: relative;
+            transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+            &.in-view {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            &.hide-in-view {
+                opacity: 0;
+                transform: translateX(40px);
+            }
             .button {
                 display: flex;
                 align-items: center;
@@ -160,6 +178,41 @@
         gap: 44px;
         padding-top: 64px;
         padding-bottom: 64px;
+    }
+}
+.contained-banner-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 16px; 
+    .contained-banner-box {
+        border-radius: 16px;
+        background-color: #2a2a2a;
+        box-shadow: 0px 12px 44px 0px rgba(0, 0, 0, 0.06);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 44px 24px;
+        flex-direction: column;
+        gap: 12px;
+        flex-grow: 1;
+        text-align: center;
+        .label {
+            color: aquamarine;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .title {
+            color: white;
+            font-size: 20px;
+            max-width: 440px;
+        }
+        .subtitle {
+            color: rgba($color: white, $alpha: 0.7);
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 440px;
+        }
     }
 }
 

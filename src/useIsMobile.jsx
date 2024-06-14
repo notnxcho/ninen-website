@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-const useIsMobile = () => {
+import { useLocation } from 'react-router-dom';
+
+export const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 820);
 
   useEffect(() => {
@@ -17,4 +19,9 @@ const useIsMobile = () => {
   return isMobile;
 }
 
-export default useIsMobile
+export const useScrollToTop = () => {
+  const location = useLocation();
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [location]); // Triggered on change of route
+};

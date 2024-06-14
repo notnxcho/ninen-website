@@ -17,8 +17,6 @@ code {
   width: 1080px;
   padding-left: 16px;
   padding-right: 16px;
-  border-right: 1px solid rgba(110, 96, 96, 0.16);
-  border-left: 1px solid rgba(110, 96, 96, 0.16);
   @media (max-width: 1200px) {
     width: 780px;
   }
@@ -26,7 +24,10 @@ code {
     width: calc(100vw - 24px);
   }
 }
-
+.container-border {
+  border-right: 1px solid rgba(110, 96, 96, 0.16);
+  border-left: 1px solid rgba(110, 96, 96, 0.16);
+}
 .container-width {
   width: 1080px;
   @media (max-width: 1200px) {
@@ -36,4 +37,44 @@ code {
     width: calc(100vw - 24px);
   }
 }
+.container-wide {
+  width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  @media (max-width: 1200px) {
+    width: 900px;
+  }
+  @media (max-width: 900px) {
+    width: calc(100vw - 24px);
+  }
+}
+.container-wide-border {
+  border-right: 1px solid rgba(110, 96, 96, 0.16);
+  border-left: 1px solid rgba(110, 96, 96, 0.16);
+}
+.container-wide-force {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-right: 1px solid rgba(110, 96, 96, 0.16);
+    border-left: 1px solid rgba(110, 96, 96, 0.16);
+    @media (max-width: 1200px) {
+      width: 900px;
+    }
+    @media (max-width: 900px) {
+      width: calc(100vw - 24px);
+    }
+  }
+  .container-width {
+    width: 1200px;
+    @media (max-width: 1200px) {
+      width: 900px;
+    }
+    @media (max-width: 900px) {
+      width: calc(100vw - 24px);
+    }
+  }
+}
+
 

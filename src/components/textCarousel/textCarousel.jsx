@@ -12,7 +12,7 @@ const TextCarousel = ({ texts }) => {
     const intervalId = setInterval(() => {
       setOutgoingIndex(currentIndex)
       setCurrentIndex(currentIndex => (currentIndex + 1) % texts.length)
-    }, 2400)
+    }, 1800)
 
     return () => clearInterval(intervalId)
   }, [texts.length, currentIndex])

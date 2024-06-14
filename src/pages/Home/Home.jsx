@@ -7,21 +7,31 @@ import Navbar from '../../components/navbar/navbar'
 import PerkCards from '../../components/perkCards/perkCards';
 import TextCarousel from '../../components/textCarousel/textCarousel';
 import ThreeDots from '../../components/threeDots/threeDots'
+import PortfolioHomeSection from '../../components/portfolioHomeSection/portfolioHomeSection'
 import './HomeStyles.scss'
 
 import Spline from '@splinetool/react-spline';
+import Footer from '../../components/footer/footer';
+import { useInView } from 'react-intersection-observer';
 
 
 const Home = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        rootMargin: '-40px 0px'
+    }) 
     return (
         <div className='home'>
             <div className="hero-wrap">
                 <div className="spline-scene-wrapper">
                     <Spline scene="https://prod.spline.design/NiwX6yrUSd5DeChT/scene.splinecode" />
                 </div>
-                <div className="hero container">
+                <div className="hero container container-border">
                     <Navbar/>
-                    <div className="hero-content">
+                    <div 
+                        ref={ref}
+                        className={`hero-content ${inView ? 'in-view' : 'hide-in-view'}`}
+                    >
                         <ThreeDots/>
                         <div className="hero-title">
                             Creative and superior software studio
@@ -32,7 +42,7 @@ const Home = () => {
                             We can design, build and help you scale your apps.
                             <div className="horizontal-brand-line" style={{bottom: -12}}/>
                         </div>
-                        <div className="cta-wrap">
+                        <div className={`cta-wrap ${inView ? 'in-view' : 'hide-in-view'}`}>
                             <div className="horizontal-brand-line" style={{bottom: -12}}/>
                             <div className="button primary">
                                 Get started 
@@ -44,7 +54,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="info-section">
-                <div className="info-section-content container">
+                <div className="info-section-content container container-border">
                     <div className="info-section-title-wrap">
                         <div className="title-block">We're the right</div>
                         <TextCarousel 
@@ -66,7 +76,7 @@ const Home = () => {
                 ctaText={'Work with us'}
             />
             <div className="info-section">
-                <div className="info-section-content container">
+                <div className="info-section-content container container-border">
                     <div className="info-section-title-wrap">
                         <div className="title-block">It’s easy to work with us</div>
                         <div className="horizontal-brand-line" style={{bottom: -12}}/>
@@ -78,6 +88,15 @@ const Home = () => {
                     ]}/>
                 </div>
             </div>
+            <PortfolioHomeSection/>
+            <div className="contained-banner-wrap container container container-border">
+                <div className="contained-banner-box container-width">
+                    <div className="label">We're the right fit</div>
+                    <div className="title">Get started today</div>
+                    <div className="subtitle">Whether you want to start building a product or grow your team, Ninen offers Design and Development services tailored to your needs.</div>
+                </div>
+            </div>
+            <Footer/>
         </div>
     )
 }

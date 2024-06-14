@@ -1,6 +1,8 @@
+import { useInView } from 'react-intersection-observer'
 import HeartIcon from '../../assets/icons/heartIcon'
 import QuillIcon from '../../assets/icons/quillIcon'
 import VennIcon from '../../assets/icons/vennIcon'
+import {useIsMobile} from '../../useIsMobile'
 import './perkCardStyles.scss'
 
 const PerkCards = ({
@@ -10,16 +12,23 @@ const PerkCards = ({
         { title: 'Unmatched attention to detail', subtitle: 'Every pixel must be perfect, every decision has a purpose and nothing will be left to randomness.', icon: <QuillIcon/>},
     ]
 }) => {
-
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        rootMargin: '-120px 0px'
+    })
+    const isMobile = useIsMobile()
     return (
-        <div className='cards-grid-container'>
+        <div className='cards-grid-container' ref={ref}>
             <div className="horizontal-brand-line" style={{top: -12}}/>
             <div className="horizontal-brand-line" style={{bottom: -12}}/>
-            <div className="vertical-brand-line" style={{right: 74}}/>
-            <div className="vertical-brand-line" style={{left: 74}}/>
+            {!isMobile && <div className="vertical-brand-line" style={{right: 74}}/>}
+            {!isMobile && <div className="vertical-brand-line" style={{left: 74}}/>}
 
-            {items.map( item => (
-                <div className="grid-item">
+            {items.map( (item, index) => (
+                <div 
+                    className={`grid-item ${inView ? 'in-view' : 'hide-in-view'}`}
+                    style={{transitionDelay: `${index/3}s`}}
+                >
                     <div className="item-icon-box">{item.icon}</div>
                     <div className="item-title">{item.title}</div>
                     <div className="item-subtitle">{item.subtitle}</div>

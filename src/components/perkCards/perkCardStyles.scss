@@ -6,9 +6,12 @@
     padding: 0px 88px;
     box-sizing: border-box;
     position: relative;
+    @media (max-width: 1200px) {
+        padding: 0px 24px;
+    }
     @media (max-width: 820px) {
         padding: 0px;
-      }
+    }
     .grid-item {
         display: flex;
         flex-direction: column;
@@ -20,6 +23,15 @@
         align-items: center;
         gap: 12px;
         text-align: center;
+        transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        &.hide-in-view {
+            opacity: 0;
+            transform: translateY(60px);
+        }
         .item-icon-box {
             display: flex;
             align-items: center;

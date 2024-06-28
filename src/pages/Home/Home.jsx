@@ -13,13 +13,14 @@ import './HomeStyles.scss'
 import Spline from '@splinetool/react-spline';
 import Footer from '../../components/footer/footer';
 import { useInView } from 'react-intersection-observer';
+import ContainerBannerWrap from '../../components/containerBannerWrap/containerBannerWrap';
 
 
 const Home = () => {
     const { ref, inView } = useInView({
         triggerOnce: true,
         rootMargin: '-40px 0px'
-    }) 
+    })
     return (
         <div className='home'>
             <div className="hero-wrap">
@@ -89,13 +90,7 @@ const Home = () => {
                 </div>
             </div>
             <PortfolioHomeSection/>
-            <div className="contained-banner-wrap container container container-border">
-                <div className="contained-banner-box container-width">
-                    <div className="label">We're the right fit</div>
-                    <div className="title">Get started today</div>
-                    <div className="subtitle">Whether you want to start building a product or grow your team, Ninen offers Design and Development services tailored to your needs.</div>
-                </div>
-            </div>
+            <ContainerBannerWrap/>
             <Footer/>
         </div>
     )

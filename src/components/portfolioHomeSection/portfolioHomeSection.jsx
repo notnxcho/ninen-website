@@ -1,5 +1,5 @@
-import LiquidStash from '../../pages/Projects/LiquidStash/LiquidStash'
-import Perodent from '../../pages/Projects/Perodent/Perodent'
+import LiquidStash from '../../pages/Projects/LiquidStash/LiquidStashHero'
+import Perodent from '../../pages/Projects/Perodent/PerodentHero'
 import { useIsMobile } from '../../useIsMobile'
 import './portfolioHomeSectionStyles.scss'
 

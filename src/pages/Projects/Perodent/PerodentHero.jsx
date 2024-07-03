@@ -1,7 +1,5 @@
 import { useIsMobile, useScrollToTop } from '../../../useIsMobile'
 import PerodentLogo from '../../../assets/mockups/perodent/perodent-logo.png'
-import DistBannerText from '../../../assets/mockups/liquidStash/dist-banner-text.png'
-import DistBannerCta from '../../../assets/mockups/liquidStash/dist-banner-cta.png'
 import DentalChart from '../../../assets/mockups/perodent/dental-chart.png'
 import PieceForm from '../../../assets/mockups/perodent/Piece-form.png'
 import './PerodentStyles.scss'
@@ -10,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
 
 
-const Perodent = ({readCaseStudy = false, container = false}) => {
+const PerodentHero = ({readCaseStudy = false, container = false}) => {
     const isMobile = useIsMobile()
     const navigate = useNavigate()
     const { ref, inView } = useInView({
@@ -54,4 +52,4 @@ const Perodent = ({readCaseStudy = false, container = false}) => {
     )
 }
 
-export default Perodent
+export default PerodentHero

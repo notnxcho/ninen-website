@@ -9,9 +9,9 @@ const ProjectIndex = ({hero, content}) => {
                 <div className="hero container container-border">
                     <Navbar/>
                     {hero}
-                    {content}
                 </div>
             </div>
+            {content}
             <CtaBannerSection 
                 displayText={'Are you ready for your next smart move?'}
                 ctaText={'Work with us'}

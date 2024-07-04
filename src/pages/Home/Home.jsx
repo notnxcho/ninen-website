@@ -14,6 +14,7 @@ import Spline from '@splinetool/react-spline';
 import Footer from '../../components/footer/footer';
 import { useInView } from 'react-intersection-observer';
 import ContainerBannerWrap from '../../components/containerBannerWrap/containerBannerWrap';
+import SplashLogo from '../../components/splashLogo/SplashLogo';
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
     })
     return (
         <div className='home'>
+            <SplashLogo/>
             <div className="hero-wrap">
                 <div className="spline-scene-wrapper">
                     <Spline scene="https://prod.spline.design/NiwX6yrUSd5DeChT/scene.splinecode" />

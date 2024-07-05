@@ -56,12 +56,12 @@ const PerodentContent = () => {
                     <div className="heading">Measurable outcomes</div>
                     <div className="description">
                         <p>
-                            The traditional periodontal chart form sheet has roughly 960 form fields to populate in a A4 format, with little to none visual cues.
-                            We had to break down the form into four steps, essentially dictated by the different ways the mouth can be sectioned. This approach prevents the overwhelm that comes from seeing all the information at once without a clear visual entry point. This involves one crucial UX Principle to forms of this characteristics, the Progressive Disclosure.
+                            We sucessfully targeted and solved every problem described by the client, improving all the business core KPI's and creating a great user experience.
+                            For measuring the product UX we conducted a little survey comparing before and after the design treatment. Our test subject, a dentist friend of the client, rated the "Frustration Index" with 2/10 for our redesign, and 7/10 for the traditional approach.
                         </p>
                         <p>
-                            The absolute MVP of this solution is the ability to navigate and populate the whole form with only the keyboard, and more specifically the left side of it. As 90% of the examiners sit to the right of the patient the examination and probing happens mostly with the right hand, leaving the left hand sit in a natural position and free enough for populating the data into the form.
-                            As a general rule, keyboard shorcuts also work beautifully boosting the productivity of power users, which completely applies in this scenario.
+                            For us it's not only about the business performance metrics, it's also about approaching the design in an user-centric way.
+                            Focusing on the second always steers the business to the first, as there's a positive correlation between the two. Lastly, how it impacted the business:
                         </p>
                     </div>
                     <PerodentBadges/>

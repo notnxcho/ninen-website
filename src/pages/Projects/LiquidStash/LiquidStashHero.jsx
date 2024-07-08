@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
 
 
-const LiquidStash = ({readCaseStudy = false, container = false}) => {
+const LiquidStashHero = ({readCaseStudy = false, container = false}) => {
     const isMobile = useIsMobile()
     const navigate = useNavigate()
     const { ref, inView } = useInView({
@@ -60,4 +60,4 @@ const LiquidStash = ({readCaseStudy = false, container = false}) => {
     )
 }
 
-export default LiquidStash
+export default LiquidStashHero

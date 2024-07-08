@@ -1,4 +1,4 @@
-import LiquidStash from '../../pages/Projects/LiquidStash/LiquidStashHero'
+import LiquidStashHero from '../../pages/Projects/LiquidStash/LiquidStashHero'
 import Perodent from '../../pages/Projects/Perodent/PerodentHero'
 import { useIsMobile } from '../../useIsMobile'
 import './portfolioHomeSectionStyles.scss'
@@ -8,7 +8,7 @@ const PortfolioHomeSection = () => {
     return (
         <div className="portfolio-section">
             <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh'}}>
-                <LiquidStash readCaseStudy={true} container={true}/>
+                <LiquidStashHero readCaseStudy={true} container={true}/>
             </div>
             <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh', background: '#FCFCFC'}}>
                 <Perodent readCaseStudy={true} container={true}/>

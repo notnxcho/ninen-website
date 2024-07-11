@@ -56,7 +56,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="info-section">
+            <div className="info-section" id='why-us-target'>
                 <div className="info-section-content container container-border">
                     <div className="info-section-title-wrap">
                         <div className="title-block">We're the right</div>

@@ -2,7 +2,7 @@ import { useInView } from 'react-intersection-observer'
 import HeartIcon from '../../assets/icons/heartIcon'
 import QuillIcon from '../../assets/icons/quillIcon'
 import VennIcon from '../../assets/icons/vennIcon'
-import {useIsMobile} from '../../useIsMobile'
+import {useIsMobile} from '../../customHooks'
 import './perkCardStyles.scss'
 
 const PerkCards = ({

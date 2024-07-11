@@ -22,6 +22,13 @@ export const useIsMobile = () => {
 export const useScrollToTop = () => {
   const location = useLocation();
   useEffect(() => {
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, [location]); // Triggered on change of route
+};
+
+export const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 };

@@ -1,4 +1,4 @@
-import { useIsMobile, useScrollToTop } from '../../../useIsMobile'
+import { useIsMobile, useScrollToTop } from '../../../customHooks'
 import LiquidLogo from '../../../assets/mockups/liquidStash/liquid logo.png'
 import Waterfall from '../../../assets/mockups/liquidStash/waterfall.png'
 import DistChart from '../../../assets/mockups/liquidStash/dist-chart.png'
@@ -35,7 +35,7 @@ const LiquidStashHero = ({readCaseStudy = false, container = false}) => {
                 <div className="keywords">
                     <div className="horizontal-brand-line" style={{bottom: -12}}/>
                     <div className='chips-wrap'>
-                        {['UX / UX', 'Machine Learning', 'Fintech', 'Prototype'].map((chip) => {
+                        {['UX / UX', 'Machine Learning', 'Fintech', 'Prototype', 'React', 'Typescript'].map((chip) => {
                             return (
                                 <div className="chip">{chip}</div>
                             )

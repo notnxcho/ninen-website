@@ -1,5 +1,5 @@
 import Logo from '../../assets/LOGO-dark.png'
-import {useIsMobile} from '../../useIsMobile.jsx'
+import {useIsMobile} from '../../customHooks.jsx'
 import './footerStyles.scss'
 
 const Footer = () => {

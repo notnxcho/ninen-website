@@ -1,7 +1,7 @@
 import './navbar.scss'
 import Logo from '../../assets/LOGO.png'
 import { useState } from 'react'
-import {useIsMobile} from '../../useIsMobile.jsx'
+import {scrollToSection, useIsMobile} from '../../customHooks.jsx'
 import HambIcon from '../../assets/icons/hambIcon.jsx'
 import CloseIcon from '../../assets/icons/closeIcon.jsx'
 import { useNavigate } from 'react-router-dom'
@@ -22,17 +22,17 @@ const Navbar = () => {
                     </div>
                     :
                     <div className="navbar-links">
-                        <div className="link">Why us</div>
-                        <div className="link" onClick={() => navigate('/projects/liquidStash')}>Our work</div>
-                        <div className="link">Contact</div>
+                        <div className="link" onClick={() => scrollToSection('why-us-target')}>Why us</div>
+                        <div className="link" onClick={() => scrollToSection('our-work-target')}>Our work</div>
+                        <div className="link" onClick={() => scrollToSection('our-work-target')}>Contact</div>
                     </div>
                 }
             </div>
             <div className={`menu-overlay ${!mobileMenu && 'menu-overlay-hidden'}`}>
                 <div className='mobile-menu-container'>
-                    <div className="menu-option"><div className='container-width'>Why us</div></div>
-                    <div className="menu-option"><div className='container-width'>Our Work</div></div>
-                    <div className="menu-option"><div className='container-width'>Contact</div></div>
+                    <div className="menu-option" onClick={() => scrollToSection('why-us-target')}><div className='container-width'>Why us</div></div>
+                    <div className="menu-option" onClick={() => scrollToSection('our-work-target')}><div className='container-width'>Our Work</div></div>
+                    <div className="menu-option" onClick={() => scrollToSection('our-work-target')}><div className='container-width'>Contact</div></div>
                 </div>
             </div>
         </div>

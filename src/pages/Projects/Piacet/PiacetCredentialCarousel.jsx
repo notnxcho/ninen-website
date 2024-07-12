@@ -11,45 +11,45 @@ const credentialTypes = {
 }
 const initialCreds = [
     {
-        title: 'Cardiology Technician',
+        title: 'Echocardiography Spec.',
         category: credentialTypes.specialty,
-        expiry: '6 Jun 2027',
-        created: '28 Feb 2023',
+        expiry: '10 Dec 2023',
+        created: '12 Mar 2022',
         id: '0785761235-56'
     },
     {
-        title: 'Cardiology Technician 2',
+        title: 'COVID-19 Test',
         category: credentialTypes.covid,
-        expiry: '6 Jun 2027',
-        created: '28 Feb 2023',
+        expiry: '15 Nov 2022',
+        created: '5 Jul 2021',
         id: '9167494-81'
     },
     {
-        title: 'Cardiology Technician 3',
+        title: 'Cardiology Expert',
         category: credentialTypes.educational,
-        expiry: '6 Jun 2027',
-        created: '28 Feb 2023',
+        expiry: '22 Jan 2024',
+        created: '18 Oct 2020',
         id: '8949421-11'
     },
     {
-        title: 'Cardiology Technician 4',
+        title: 'PALS Certification',
         category: credentialTypes.other,
-        expiry: '6 Jun 2027',
-        created: '28 Feb 2023',
+        expiry: '7 Mar 2022',
+        created: '2 Feb 2019',
         id: '00173461-92'
     },
     {
-        title: 'Cardiology Technician 5',
-        category: credentialTypes.clinical,
-        expiry: '6 Jun 2027',
-        created: '28 Feb 2023',
+        title: 'Life Support Provider',
+        category: credentialTypes.lifeSup,
+        expiry: '30 Jul 2021',
+        created: '25 May 2018',
         id: '7910281-04'
     },
     {
-        title: 'Cardiology Technician 6',
+        title: 'Pediatric Nursing',
         category: credentialTypes.clinical,
-        expiry: '6 Jun 2027',
-        created: '28 Feb 2023',
+        expiry: '18 Sep 2020',
+        created: '31 Aug 2017',
         id: '99472166-39'
     },
 ]
@@ -72,7 +72,17 @@ const PiacetCredentialsCarousel = () => {
         <div className="credentials-wrapper">
             {credentials.map((cred, index) => {
                 return (
-                    <div key={index + cred.id} className="credential-container" style={{ top: `${index * 80}px`, zIndex: 100 - index, transform: `scale(${1 - index/60})`}}>
+                    <div 
+                        key={index + cred.id} 
+                        className="credential-container" 
+                        style={{ 
+                            top: `${(index * 60 - (index**2)*3)}px`, 
+                            zIndex: 100 - index,
+                            transform: `scale(${1 - index/30})`,
+                            filter: `blur(${index/3}px)`,
+                        }}
+                        // style={index ? {boxShadow: `0px 12px 44px 8px rgba(0,0,0,0.0${(6 - index)})`} : {boxShadow: `0px 12px 44px 8px rgba(0,0,0,0.1)`}}
+                    >
                         <div className="header">
                             <div className="wrap">
                                 <div className={`title hide-shimmer`}>

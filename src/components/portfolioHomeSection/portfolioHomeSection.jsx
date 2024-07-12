@@ -8,14 +8,14 @@ const PortfolioHomeSection = () => {
     const isMobile = useIsMobile()
     return (
         <div className="portfolio-section" id='our-work-target'>
-            <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh', background: '#FCFCFC'}}>
-                <PiacetHero readCaseStudy={true} container={true}/>
-            </div>
             <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh'}}>
-                <LiquidStashHero readCaseStudy={true} container={true}/>
+                <PiacetHero readCaseStudy={true} container={true}/>
             </div>
             <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh', background: '#FCFCFC'}}>
                 <PerodentHero readCaseStudy={true} container={true}/>
+            </div>
+            <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh'}}>
+                <LiquidStashHero readCaseStudy={true} container={true}/>
             </div>
         </div>
     )

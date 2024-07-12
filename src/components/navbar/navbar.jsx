@@ -30,9 +30,9 @@ const Navbar = () => {
             </div>
             <div className={`menu-overlay ${!mobileMenu && 'menu-overlay-hidden'}`}>
                 <div className='mobile-menu-container'>
-                    <div className="menu-option" onClick={() => scrollToSection('why-us-target')}><div className='container-width'>Why us</div></div>
-                    <div className="menu-option" onClick={() => scrollToSection('our-work-target')}><div className='container-width'>Our Work</div></div>
-                    <div className="menu-option" onClick={() => scrollToSection('our-work-target')}><div className='container-width'>Contact</div></div>
+                    <div className="menu-option" onClick={() => {setMobileMenu(false); scrollToSection('why-us-target')}}><div className='container-width'>Why us</div></div>
+                    <div className="menu-option" onClick={() => {setMobileMenu(false); scrollToSection('our-work-target')}}><div className='container-width'>Our Work</div></div>
+                    <div className="menu-option" onClick={() => {setMobileMenu(false); scrollToSection('our-work-target')}}><div className='container-width'>Contact</div></div>
                 </div>
             </div>
         </div>

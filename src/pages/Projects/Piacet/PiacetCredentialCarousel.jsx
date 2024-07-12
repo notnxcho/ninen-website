@@ -27,24 +27,48 @@ const PiacetCredentialsCarousel = () => {
                     <div className="credential-container">
                         <div className="header">
                             <div className="wrap">
-                                <div className="title">{cred.title}</div>
-                                <div className="category" style={{color: cred.category.color}}>{cred.category.label}</div>
+                                <div className={`title hide-shimmer`}>
+                                    {cred.title}
+                                    <div className="shimmer-box" style={{transitionDelay: '4s'}}/>
+                                </div>
+                                <div className={`category hide-shimmer`} style={{color: cred.category.color}}>
+                                    {cred.category.label}
+                                    <div className="shimmer-box" style={{transitionDelay: '4.4s'}}/>
+                                </div>
                             </div>
                         </div>
                         <div className="info-row">
                             <div className="item">
-                                <div className="label">Created</div>
-                                <div className="value">{cred.created}</div>
+                                <div className={`label hide-shimmer`}>
+                                    Created
+                                    <div className="shimmer-box" style={{transitionDelay: '4.8s'}}/>
+                                </div>
+                                <div className={`value hide-shimmer`}>
+                                    {cred.created}
+                                    <div className="shimmer-box" style={{transitionDelay: '5.4s'}}/>
+                                </div>
                             </div>
                             <div className="item">
-                                <div className="label">Expiry</div>
-                                <div className="value">{cred.expiry}</div>
+                                <div className={`label hide-shimmer`}>
+                                    Expiry
+                                    <div className="shimmer-box" style={{transitionDelay: '5.8s'}}/>
+                                </div>
+                                <div className={`value hide-shimmer`}>
+                                    {cred.expiry}
+                                    <div className="shimmer-box" style={{transitionDelay: '6.4s'}}/>
+                                </div>
                             </div>
                         </div>
                         <div className="info-row">
                             <div className="item">
-                                <div className="label">ID Number</div>
-                                <div className="value">{cred.id}</div>
+                                <div className={`label hide-shimmer`}>
+                                    ID Number
+                                    <div className="shimmer-box" style={{transitionDelay: '7s'}}/>
+                                </div>
+                                <div className={`value hide-shimmer`}>
+                                    {cred.id}
+                                    <div className="shimmer-box" style={{transitionDelay: '7.4s'}}/>
+                                </div>
                             </div>
                         </div>
                     </div>

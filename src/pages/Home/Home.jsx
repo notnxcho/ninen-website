@@ -15,6 +15,7 @@ import Footer from '../../components/footer/footer';
 import { useInView } from 'react-intersection-observer';
 import ContainerBannerWrap from '../../components/containerBannerWrap/containerBannerWrap';
 import SplashLogo from '../../components/splashLogo/SplashLogo';
+import { scrollToSection } from '../../customHooks';
 
 
 const Home = () => {
@@ -51,7 +52,7 @@ const Home = () => {
                                 Get started 
                                 <ArrowIcon/>
                             </div>
-                            <div className="button secondary">See our work</div>
+                            <div className="button secondary" onClick={() => scrollToSection('our-work-target')}>See our work</div>
                         </div>
                     </div>
                 </div>

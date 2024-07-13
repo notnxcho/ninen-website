@@ -79,19 +79,18 @@ const PiacetCredentialsCarousel = () => {
                             top: `${(index * 60 - (index**2)*3)}px`, 
                             zIndex: 100 - index,
                             transform: `scale(${1 - index/30})`,
-                            filter: `blur(${index/3}px)`,
+                            // filter: `blur(${index/3}px)`,
                         }}
-                        // style={index ? {boxShadow: `0px 12px 44px 8px rgba(0,0,0,0.0${(6 - index)})`} : {boxShadow: `0px 12px 44px 8px rgba(0,0,0,0.1)`}}
                     >
                         <div className="header">
                             <div className="wrap">
-                                <div className={`title hide-shimmer`}>
+                                <div className={`title`}>
                                     {cred.title}
                                     <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '1.0s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>
-                                <div className={`category hide-shimmer`} style={{color: cred.category.color}}>
+                                <div className={`category`} style={{color: cred.category.color}}>
                                     {cred.category.label}
                                     <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '1.4s'}}>
                                         <div className="shimmer-element"/>
@@ -101,13 +100,13 @@ const PiacetCredentialsCarousel = () => {
                         </div>
                         <div className="info-row">
                             <div className="item">
-                                <div className={`label hide-shimmer`}>
+                                <div className={`label`}>
                                     Created
                                     <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '1.8s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>
-                                <div className={`value hide-shimmer`}>
+                                <div className={`value`}>
                                     {cred.created}
                                     <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '2.4s'}}>
                                         <div className="shimmer-element"/>
@@ -115,13 +114,13 @@ const PiacetCredentialsCarousel = () => {
                                 </div>
                             </div>
                             <div className="item">
-                                <div className={`label hide-shimmer`}>
+                                <div className={`label`}>
                                     Expiry
                                     <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '2.8s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>
-                                <div className={`value hide-shimmer`}>
+                                <div className={`value`}>
                                     {cred.expiry}
                                     <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '3.4s'}}>
                                         <div className="shimmer-element"/>
@@ -131,13 +130,13 @@ const PiacetCredentialsCarousel = () => {
                         </div>
                         <div className="info-row">
                             <div className="item">
-                                <div className={`label hide-shimmer`}>
+                                <div className={`label`}>
                                     ID Number
                                     <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '4.0s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>
-                                <div className={`value hide-shimmer`}>
+                                <div className={`value`}>
                                     {cred.id}
                                     <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '4.4s'}}>
                                         <div className="shimmer-element"/>

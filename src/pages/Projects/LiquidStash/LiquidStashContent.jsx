@@ -24,7 +24,7 @@ const LiquidStashContent = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-block-section-wrap">
+            {/* <div className="text-block-section-wrap">
                 <div className="text-block-content container container-border">
                     <div className="heading">What we delivered</div>
                     <div className="description">
@@ -34,8 +34,8 @@ const LiquidStashContent = () => {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="text-block-section-wrap">
+            </div> */}
+            {/* <div className="text-block-section-wrap">
                 <div className="text-block-content container container-border">
                     <div className="heading">Measurable outcomes</div>
                     <div className="description">
@@ -45,7 +45,7 @@ const LiquidStashContent = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

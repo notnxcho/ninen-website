@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import Logo from '../../assets/LOGO-dark.png'
 import {useIsMobile} from '../../customHooks.jsx'
 import './footerStyles.scss'
 
 const Footer = () => {
+    const navigate = useNavigate()
     const isMobile = useIsMobile()
     const content = [
         {label: 'Useful links', items: 
@@ -14,8 +16,9 @@ const Footer = () => {
         },
         {label: 'Projects', items: 
             [
-                {text: 'Dental', link: ''},
-                {text: 'LiquidStash', link: ''},
+                {text: 'Piacet', link: '/projects/Piacet'},
+                {text: 'Perodent', link: '/projects/Perodent'},
+                {text: 'LiquidStash', link: '/projects/LiquidStash'},
             ]
         },
     ]
@@ -32,7 +35,7 @@ const Footer = () => {
                                 <div className="label">{col.label}</div>
                                 {col.items.map((item) => {
                                     return (
-                                        <div className="item">{item.text}</div>
+                                        <div className="item" onClick={() => navigate(`${item.link}`)}>{item.text}</div>
                                     )
                                 })}
                             </div>

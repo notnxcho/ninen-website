@@ -36,7 +36,7 @@ const initialCreds = [
         category: credentialTypes.other,
         expiry: '7 Mar 2022',
         created: '2 Feb 2019',
-        id: '00173461-92'
+        id: '80173461-92'
     },
     {
         title: 'Life Support Provider',

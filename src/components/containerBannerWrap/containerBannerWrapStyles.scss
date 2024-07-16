@@ -17,6 +17,16 @@
         text-align: center;
         background-image: radial-gradient(farthest-side at 50% 100%, #0e4c45 0%, #212222 100%);
         transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+        position: relative;
+        box-shadow: 0px 16px 24px -24px #2ea093;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(90deg, #0e4c4500 0%, #268d81 50%, #0e4c4500 100%);
+        }
         &.in-view {
             opacity: 1;
             transform: translateY(0);

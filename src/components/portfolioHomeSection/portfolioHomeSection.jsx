@@ -8,13 +8,19 @@ const PortfolioHomeSection = () => {
     const isMobile = useIsMobile()
     return (
         <div className="portfolio-section" id='our-work-target'>
-            <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh'}}>
+            <div className="intro-banner">
+                <div className="intro-banner-content container container-border">
+                    <div className="title">How we've helped others</div>
+                    <div className="subtitle">And how can we help you succeed</div>
+                </div>
+            </div>
+            <div className="hero" style={{minHeight: isMobile ? '100vh' : '86vh'}}>
                 <PiacetHero readCaseStudy={true} container={true}/>
             </div>
-            <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh', background: '#FCFCFC'}}>
+            <div className="hero" style={{minHeight: isMobile ? '100vh' : '86vh', background: '#FCFCFC'}}>
                 <PerodentHero readCaseStudy={true} container={true}/>
             </div>
-            <div className="hero" style={{minHeight: isMobile ? '100vh' : '80vh'}}>
+            <div className="hero" style={{minHeight: isMobile ? '100vh' : '86vh'}}>
                 <LiquidStashHero readCaseStudy={true} container={true}/>
             </div>
         </div>

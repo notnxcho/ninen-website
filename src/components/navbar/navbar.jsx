@@ -1,7 +1,7 @@
 import './navbar.scss'
 import Logo from '../../assets/LOGO.png'
 import { useState } from 'react'
-import {scrollToSection, useIsMobile} from '../../customHooks.jsx'
+import {getStartedClick, scrollToSection, useIsMobile} from '../../customHooks.jsx'
 import HambIcon from '../../assets/icons/hambIcon.jsx'
 import CloseIcon from '../../assets/icons/closeIcon.jsx'
 import { useNavigate } from 'react-router-dom'
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <div className='mobile-menu-container'>
                     <div className="menu-option" onClick={() => {setMobileMenu(false); scrollToSection('why-us-target')}}><div className='container-width'>Why us</div></div>
                     <div className="menu-option" onClick={() => {setMobileMenu(false); scrollToSection('our-work-target')}}><div className='container-width'>Our Work</div></div>
-                    <div className="menu-option" onClick={() => {setMobileMenu(false); getStartedClick}}><div className='container-width'>Contact</div></div>
+                    <div className="menu-option" onClick={() => {setMobileMenu(false); getStartedClick()}}><div className='container-width'>Contact</div></div>
                 </div>
             </div>
         </div>

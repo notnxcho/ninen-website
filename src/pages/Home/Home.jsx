@@ -15,7 +15,7 @@ import Footer from '../../components/footer/footer';
 import { useInView } from 'react-intersection-observer';
 import ContainerBannerWrap from '../../components/containerBannerWrap/containerBannerWrap';
 import SplashLogo from '../../components/splashLogo/SplashLogo';
-import { scrollToSection } from '../../customHooks';
+import { getStartedClick, scrollToSection } from '../../customHooks';
 
 
 const Home = () => {

@@ -22,6 +22,15 @@
             width: 100%;
             background: linear-gradient(90deg, #0e4c4500 0%, #268d81 50%, #0e4c4500 100%);
         }
+        &::before {
+            content: '';
+            position: absolute;
+            max-width: 400px;
+            bottom: 16%;
+            height: 2px;
+            width: 70%;
+            background: linear-gradient(90deg, #0e4c4500 0%, #268d81aa 50%, #0e4c4500 100%);
+        }
         .intro-banner-content {
             padding: 64px 24px;
             gap: 12px;

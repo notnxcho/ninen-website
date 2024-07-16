@@ -9,19 +9,26 @@ const Footer = () => {
     const content = [
         {label: 'Useful links', items: 
             [
-                {text: 'Contact', link: ''},
-                {text: 'Dribbble', link: ''},
-                {text: 'Linkedin', link: ''},
+                {text: 'Contact', link: '', external: true},
+                {text: 'Dribbble', link: 'https://dribbble.com/notnxcho', external: true},
+                {text: 'Linkedin', link: 'https://www.linkedin.com/in/nacho-lorenzo-434a6018b/', external: true},
             ]
         },
         {label: 'Projects', items: 
             [
-                {text: 'Piacet', link: '/projects/Piacet'},
-                {text: 'Perodent', link: '/projects/Perodent'},
-                {text: 'LiquidStash', link: '/projects/LiquidStash'},
+                {text: 'Piacet', link: '/projects/Piacet', external: false},
+                {text: 'Perodent', link: '/projects/Perodent', external: false},
+                {text: 'LiquidStash', link: '/projects/LiquidStash', external: false},
             ]
         },
     ]
+    const handleLinkClick = (item) => {
+        if (item.external) {
+            window.open(item.link, '_blank', 'nooppener,noreferrer')
+        } else {
+            navigate(item.link)
+        }
+    }
     return (
         <div className='footer-box'>
             <div className="footer-container container-width container-border">
@@ -35,7 +42,7 @@ const Footer = () => {
                                 <div className="label">{col.label}</div>
                                 {col.items.map((item) => {
                                     return (
-                                        <div className="item" onClick={() => navigate(`${item.link}`)}>{item.text}</div>
+                                        <div className="item" onClick={() => handleLinkClick(item)}>{item.text}</div>
                                     )
                                 })}
                             </div>

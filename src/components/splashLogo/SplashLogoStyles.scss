@@ -12,7 +12,7 @@
     top: 50%;
     left: 50%;
     z-index: 1000;
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(1.4);
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     box-shadow: 0px 0px 0px 2000px #000;
     animation-name: fadeContainer;
@@ -87,7 +87,7 @@
 
 @keyframes fadeContainer {
     0% {
-        transform: translate(-50%, -50%) scale(2);
+        transform: translate(-50%, -50%) scale(1.4);
         box-shadow: 0px 0px 0px 2000px #000;
         pointer-events: all;
     }
@@ -98,11 +98,11 @@
         box-shadow: 0px 0px 0px 0px #000;
     }
     60% {
-        transform: translate(-50%, -50%) scale(2);
+        transform: translate(-50%, -50%) scale(1.4);
         opacity: 1;
     }
     69% {
-        transform: translate(-50%, -500%) scale(2);
+        transform: translate(-50%, -500%) scale(1.4);
         opacity: 0;
         box-shadow: 0px 0px 0px 0px #000;
     }

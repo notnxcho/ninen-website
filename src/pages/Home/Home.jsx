@@ -48,7 +48,7 @@ const Home = () => {
                         </div>
                         <div className={`cta-wrap ${inView ? 'in-view' : 'hide-in-view'}`}>
                             <div className="horizontal-brand-line" style={{bottom: -12}}/>
-                            <div className="button primary">
+                            <div className="button primary" onClick={getStartedClick}>
                                 Get started 
                                 <ArrowIcon/>
                             </div>

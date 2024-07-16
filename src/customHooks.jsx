@@ -32,3 +32,7 @@ export const scrollToSection = (id) => {
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 };
+
+export const getStartedClick = () => {
+  window.open('https://calendar.app.google/3bx5aig5DgwJhSWh6', '_blank', 'nooppener,noreferrer')
+}

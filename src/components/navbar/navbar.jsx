@@ -24,7 +24,7 @@ const Navbar = () => {
                     <div className="navbar-links">
                         <div className="link" onClick={() => scrollToSection('why-us-target')}>Why us</div>
                         <div className="link" onClick={() => scrollToSection('our-work-target')}>Our work</div>
-                        <div className="link" onClick={() => scrollToSection('our-work-target')}>Contact</div>
+                        <div className="link" onClick={getStartedClick}>Contact</div>
                     </div>
                 }
             </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <div className='mobile-menu-container'>
                     <div className="menu-option" onClick={() => {setMobileMenu(false); scrollToSection('why-us-target')}}><div className='container-width'>Why us</div></div>
                     <div className="menu-option" onClick={() => {setMobileMenu(false); scrollToSection('our-work-target')}}><div className='container-width'>Our Work</div></div>
-                    <div className="menu-option" onClick={() => {setMobileMenu(false); scrollToSection('our-work-target')}}><div className='container-width'>Contact</div></div>
+                    <div className="menu-option" onClick={() => {setMobileMenu(false); getStartedClick}}><div className='container-width'>Contact</div></div>
                 </div>
             </div>
         </div>

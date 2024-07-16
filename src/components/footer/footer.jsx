@@ -9,7 +9,7 @@ const Footer = () => {
     const content = [
         {label: 'Useful links', items: 
             [
-                {text: 'Contact', link: '', external: true},
+                {text: 'Contact', link: 'https://calendar.app.google/3bx5aig5DgwJhSWh6', external: true},
                 {text: 'Dribbble', link: 'https://dribbble.com/notnxcho', external: true},
                 {text: 'Linkedin', link: 'https://www.linkedin.com/in/nacho-lorenzo-434a6018b/', external: true},
             ]

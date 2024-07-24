@@ -63,7 +63,7 @@ const PiacetCredentialsCarousel = () => {
             const lastCred = newCreds.pop()
             newCreds.unshift(lastCred)
             setCredentials(newCreds)
-          }, 5500)
+          }, 4200)
       
           return () => clearInterval(interval)
     }, [credentials])
@@ -108,7 +108,7 @@ const PiacetCredentialsCarousel = () => {
                                 </div>
                                 <div className={`value`}>
                                     {cred.created}
-                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '2.4s'}}>
+                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '2.2s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>
@@ -116,13 +116,13 @@ const PiacetCredentialsCarousel = () => {
                             <div className="item">
                                 <div className={`label`}>
                                     Expiry
-                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '2.8s'}}>
+                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '2.4s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>
                                 <div className={`value`}>
                                     {cred.expiry}
-                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '3.4s'}}>
+                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '2.8s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>
@@ -132,13 +132,13 @@ const PiacetCredentialsCarousel = () => {
                             <div className="item">
                                 <div className={`label`}>
                                     ID Number
-                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '4.0s'}}>
+                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '2.9s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>
                                 <div className={`value`}>
                                     {cred.id}
-                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '4.4s'}}>
+                                    <div className={`shimmer-box ${index && 'remain-hidden'}`} style={{animationDelay: '3.1s'}}>
                                         <div className="shimmer-element"/>
                                     </div>
                                 </div>

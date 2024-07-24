@@ -1,0 +1,51 @@
+.owner-section-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 44px 0px;
+    width: 100%;
+    background-color: #fafafa;
+    .owner-container {
+        display: flex;
+        padding: 44px;
+        border-radius: 16px;
+        background-image: radial-gradient(farthest-side at 50% 100%, #0e4c45 0%, #212222 100%);
+        align-items: center;
+        gap: 44px;
+        .profile-pic-wrapper-box {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .owner-content-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex-grow: 1;
+            .label {
+                font-size: 16px;
+                font-weight: 600;
+                color: aquamarine;
+            }
+            .title {
+                font-size: 24px;
+                color: white;
+                font-weight: 500;
+            }
+            .description {
+                color: white;
+                opacity: .7;
+                font-size: 16px;
+                font-weight: 300;
+                max-width: 70%;
+            }
+        }
+    }
+}

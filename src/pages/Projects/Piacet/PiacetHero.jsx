@@ -27,7 +27,7 @@ const PiacetHero = ({readCaseStudy = false, container = false}) => {
                     <div style={{color: '#31AFE4'}}>PIACET</div>
                 </div>
                 <div className="hero-title sizing-override">
-                    Manage and share professional credentials, prevent health insurance claims.
+                    Manage and share professional credentials, never miss an expired credential again.
                     <div className="horizontal-brand-line" style={{top: -12}}/>
                     
                     <div className="horizontal-brand-line" style={{bottom: -12}}/>

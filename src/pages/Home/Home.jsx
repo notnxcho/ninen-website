@@ -16,6 +16,7 @@ import { useInView } from 'react-intersection-observer';
 import ContainerBannerWrap from '../../components/containerBannerWrap/containerBannerWrap';
 import SplashLogo from '../../components/splashLogo/SplashLogo';
 import { getStartedClick, scrollToSection } from '../../customHooks';
+import Owner from '../../components/owner/owner';
 
 
 const Home = () => {
@@ -93,6 +94,7 @@ const Home = () => {
                 </div>
             </div>
             <PortfolioHomeSection/>
+            {/* <Owner/> */}
             <ContainerBannerWrap/>
             <Footer/>
         </div>

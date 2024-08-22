@@ -1,3 +1,5 @@
+import WipEmptyState from "../../../components/wipEmptyState/WipEmptyState"
+
 const LiquidStashContent = () => {
     return (
         <div className='case-content'>
@@ -37,6 +39,7 @@ const LiquidStashContent = () => {
                     </div>
                 </div>
             </div>
+            <WipEmptyState />
             {/* <div className="text-block-section-wrap">
                 <div className="text-block-content container container-border">
                     <div className="heading">Measurable outcomes</div>

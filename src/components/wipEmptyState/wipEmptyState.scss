@@ -1,0 +1,21 @@
+.wip-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    .wip-empty-state-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        .title {
+            font-weight: 500;
+            font-size: 24px;
+        }
+        .description {
+            font-size: 16px;
+            color: #666666;
+        }
+    }
+}

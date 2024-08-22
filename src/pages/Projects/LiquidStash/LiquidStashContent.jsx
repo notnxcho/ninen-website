@@ -24,24 +24,25 @@ const LiquidStashContent = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="text-block-section-wrap">
+            <div className="text-block-section-wrap">
                 <div className="text-block-content container container-border">
                     <div className="heading">What we delivered</div>
                     <div className="description">
                         <p>
-                            The traditional periodontal chart form sheet has roughly 960 form fields to populate in a A4 format, with little to none visual cues.
-                            We had to break down the form into four steps, essentially dictated by the different ways the mouth can be sectioned. This approach prevents the overwhelm that comes from seeing all the information at once without a clear visual entry point. This involves one crucial UX Principle to forms of this characteristics, the Progressive Disclosure.
+                            At the heart of our solution was a meticulously crafted UI design for the entire platform. We developed a bespoke design system that not only ensured visual consistency but also embodied LiquidStash's innovative spirit. This custom-tailored approach resulted in an interface that seamlessly blends sophistication with user-friendliness, setting a new standard in financial technology aesthetics.
+                        </p>
+                        <p>
+                            To tackle the complexity inherent in private equity fund management, we created a series of comprehensive diagrams that dissect intricate workflows into digestible layers. These visual masterpieces offer unprecedented clarity, illustrating each step of various processes from multiple perspectives and user roles. Complementing this, we delivered a fully interactive prototype that serves as a powerful tool for LiquidStash to showcase their revolutionary platform to potential clients and investors, effectively bringing their vision to life and demonstrating the tangible value of their innovative solution.
                         </p>
                     </div>
                 </div>
-            </div> */}
+            </div>
             {/* <div className="text-block-section-wrap">
                 <div className="text-block-content container container-border">
                     <div className="heading">Measurable outcomes</div>
                     <div className="description">
                         <p>
-                            We sucessfully targeted and solved every problem described by the client, improving all the business core KPI's and creating a great user experience.
-                            For measuring the product UX we conducted a little survey comparing before and after the design treatment. Our test subject, a dentist friend of the client, rated the "Frustration Index" with 2/10 for our redesign, and 7/10 for the traditional approach.
+                           
                         </p>
                     </div>
                 </div>

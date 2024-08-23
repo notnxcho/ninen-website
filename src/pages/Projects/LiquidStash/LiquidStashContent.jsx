@@ -41,16 +41,6 @@ const LiquidStashContent = () => {
                 </div>
             </div>
             <CaseUnderConstruction />
-            {/* <div className="text-block-section-wrap">
-                <div className="text-block-content container container-border">
-                    <div className="heading">Measurable outcomes</div>
-                    <div className="description">
-                        <p>
-                           
-                        </p>
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 }

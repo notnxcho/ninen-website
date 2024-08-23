@@ -1,4 +1,4 @@
-import WipEmptyState from "../../../components/wipEmptyState/WipEmptyState"
+import CaseUnderConstruction from "../../../components/caseUnderConstruction/CaseUnderConstruction"
 
 
 const LiquidStashContent = () => {
@@ -40,7 +40,7 @@ const LiquidStashContent = () => {
                     </div>
                 </div>
             </div>
-            <WipEmptyState />
+            <CaseUnderConstruction />
             {/* <div className="text-block-section-wrap">
                 <div className="text-block-content container container-border">
                     <div className="heading">Measurable outcomes</div>

@@ -1,7 +1,7 @@
-import './wipEmptyState.scss'
+import './CaseUnderConstruction.scss'
 import WipEmptyStateIllustration from '../../assets/wip-empty-state.png'
 
-const WipEmptyState = () => {
+const CaseUnderConstruction = () => {
     return (
         <div className="wip-empty-state">
             <img src={WipEmptyStateIllustration} alt="Work in progress" width={340} />
@@ -13,4 +13,4 @@ const WipEmptyState = () => {
     )
 }
 
-export default WipEmptyState
+export default CaseUnderConstruction

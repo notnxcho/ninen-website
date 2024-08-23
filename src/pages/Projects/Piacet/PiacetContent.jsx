@@ -1,10 +1,10 @@
-import WipEmptyState from "../../../components/wipEmptyState/WipEmptyState"
+import CaseUnderConstruction from "../../../components/caseUnderConstruction/CaseUnderConstruction"
 
 
 const PiacetContent = () => {
     return (
         <div className='case-content'>
-            <WipEmptyState />
+            <CaseUnderConstruction />
         </div>
     )
 }

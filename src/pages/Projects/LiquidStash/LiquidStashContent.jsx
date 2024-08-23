@@ -1,5 +1,6 @@
 import WipEmptyState from "../../../components/wipEmptyState/WipEmptyState"
 
+
 const LiquidStashContent = () => {
     return (
         <div className='case-content'>

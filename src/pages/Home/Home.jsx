@@ -30,7 +30,7 @@ const Home = () => {
             <SplashLogo/>
             <div className="hero-wrap">
                 <div className="spline-scene-wrapper">
-                    {inView && <Spline scene="https://prod.spline.design/NiwX6yrUSd5DeChT/scene.splinecode" />}
+                    {inView && <Spline scene="https://prod.spline.design/PhPbWm0UVZ5kXB0Y/scene.splinecode" />}
                 </div>
                 <div className="hero container container-border">
                     <Navbar/>

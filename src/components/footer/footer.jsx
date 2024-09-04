@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import Logo from '../../assets/LOGO-dark.png'
+import Logo from '../../assets/notnxcho-logo-dark.png'
 import {useIsMobile} from '../../customHooks.jsx'
 import './footerStyles.scss'
 
@@ -33,7 +33,7 @@ const Footer = () => {
         <div className='footer-box'>
             <div className="footer-container container-width container-border">
                 <div className="footer-header">
-                    <img src={Logo} height={isMobile ? 52 : 65} alt='ninen logo'/>
+                    <img src={Logo} height={isMobile ? 58 : 72} alt='ninen logo'/>
                 </div>
                 <div className="footer-content-wrap">
                     {content.map((col) => {

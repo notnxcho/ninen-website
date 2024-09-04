@@ -7,7 +7,7 @@ import './perkCardStyles.scss'
 
 const PerkCards = ({
     items = [
-        { title: 'Passionate for our craft', subtitle: 'Our holistic approach to software combines the inflections of art and science in our projects. Achieving impactful and beautiful solutions', icon: <HeartIcon/>},
+        { title: 'Passionate for my craft', subtitle: 'My holistic approach to software combines the inflections of art and science in your projects. Achieving impactful and beautiful solutions', icon: <HeartIcon/>},
         { title: 'Holistic & collaborative build strategy', subtitle: 'Interdisciplinary skills combined in the same product development workflow to achieve results that set products apart.', icon: <VennIcon/>},
         { title: 'Unmatched attention to detail', subtitle: 'Every pixel must be perfect, every decision has a purpose and nothing will be left to randomness.', icon: <QuillIcon/>},
     ]

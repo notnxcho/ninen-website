@@ -60,7 +60,7 @@ const PerodentContent = () => {
                             For measuring the product UX we conducted a little survey comparing before and after the design treatment. Our test subject, a dentist friend of the client, rated the "Frustration Index" with 2/10 for our redesign, and 7/10 for the traditional approach.
                         </p>
                         <p>
-                            For us it's not only about the business performance metrics, it's also about approaching the design in an user-centric way.
+                            For me it's not only about the business performance metrics, it's also about approaching the design in an user-centric way.
                             Focusing on the second always steers the business to the first, as there's a positive correlation between the two. Lastly, how it impacted the business:
                         </p>
                     </div>

@@ -14,7 +14,7 @@ const ProjectIndex = ({hero, content}) => {
             {content}
             <CtaBannerSection 
                 displayText={'Are you ready for your next smart move?'}
-                ctaText={'Work with us'}
+                ctaText={'Work with me'}
             />
             <Footer/>
         </div>

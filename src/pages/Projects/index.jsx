@@ -7,7 +7,7 @@ const ProjectIndex = ({hero, content}) => {
         <div className='home container-wide-force'>
             <div className="hero-wrap">
                 <div className="hero container container-border">
-                    <Navbar/>
+                    <Navbar displayLink={false} />
                     {hero}
                 </div>
             </div>

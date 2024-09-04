@@ -15,13 +15,13 @@ const PortfolioHomeSection = () => {
                 </div>
             </div>
             <div className="hero" style={{minHeight: isMobile ? '100vh' : '86vh'}}>
-                <PiacetHero readCaseStudy={true} container={true}/>
+                <LiquidStashHero readCaseStudy={true} container={true}/>
             </div>
             <div className="hero" style={{minHeight: isMobile ? '100vh' : '86vh', background: '#FCFCFC'}}>
                 <PerodentHero readCaseStudy={true} container={true}/>
             </div>
             <div className="hero" style={{minHeight: isMobile ? '100vh' : '86vh'}}>
-                <LiquidStashHero readCaseStudy={true} container={true}/>
+                <PiacetHero readCaseStudy={true} container={true}/>
             </div>
         </div>
     )

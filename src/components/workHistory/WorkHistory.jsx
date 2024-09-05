@@ -63,7 +63,11 @@ const WorkHistory = () => {
     ]
     return (
         <div className='work-history-gradient-box'>
-            <div className=' bento-grid container'>
+            <div className="title-block">
+                <div className="title">Where I've been</div>
+                <div className="subtitle">and what I've done</div>
+            </div>
+            <div className='bento-grid container'>
                 { items.map((item, index) => (  
                     <div className="card" key={index + item.company}  style={{gridColumn: `span ${item.size.x}`, gridRow: `span ${item.size.y}`}}>
                         <div className="timeframe">{item.timeframe}</div>

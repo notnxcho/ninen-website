@@ -1,3 +1,4 @@
+import { scrollToSection } from '../../customHooks'
 import './BentoGridStyles.scss'
 
 const BentoGrid = () => {
@@ -6,7 +7,7 @@ const BentoGrid = () => {
             <div className="card large primary">
                 <div className='title'>Versatile in Business Lifecycle Stages</div>
                 <p>Proficient in working with diverse teams, whether it's designing from scratch, scaling, or enhancing established products. I have tailored methods for each stage of a business lifecycle, ensuring design solutions align with business goals.</p>
-                <div className='cta'>Check out my work</div>
+                <div className='cta' onClick={() => scrollToSection('our-work-target')}>Check out my work</div>
                 <div className="bg-highlight"/>
                 <div className="bg-highlight second-highlight"/>
             </div>

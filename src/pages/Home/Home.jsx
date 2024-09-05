@@ -97,7 +97,10 @@ const Home = () => {
                 </div>
             </div>
             <PortfolioHomeSection/>
-            
+            <CtaBannerSection 
+                displayText={'Are you ready for your next smart move?'}
+                ctaText={'Work with me'}
+            />
             <ContainerBannerWrap/>
             <Footer/>
         </div>

@@ -23,13 +23,13 @@ import BentoGrid from '../../components/bentoGrid/BentoGrid';
 const Home = () => {
     const { ref, inView } = useInView({
         triggerOnce: false,
-        rootMargin: '-40px 0px'
+        rootMargin: '0px 0px'
     })
 
     return (
         <div className='home'>
             <SplashLogo/>
-            <div className="hero-wrap">
+            <div className="hero-wrap" style={{background: '#f2f2f2'}}>
                 <div className="spline-scene-wrapper" style={{display: inView ? 'block' : 'none'}}>
                     <Spline scene="https://prod.spline.design/PhPbWm0UVZ5kXB0Y/scene.splinecode" />
                 </div>

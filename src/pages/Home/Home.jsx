@@ -17,6 +17,7 @@ import ContainerBannerWrap from '../../components/containerBannerWrap/containerB
 import SplashLogo from '../../components/splashLogo/SplashLogo';
 import { getStartedClick, scrollToSection } from '../../customHooks';
 import Owner from '../../components/owner/owner';
+import BentoGrid from '../../components/bentoGrid/BentoGrid';
 
 
 const Home = () => {
@@ -75,6 +76,7 @@ const Home = () => {
                         <div className="horizontal-brand-line" style={{bottom: -12}}/>
                     </div>
                     <PerkCards/>
+                    <BentoGrid/>
                 </div>
             </div>
             <CtaBannerSection 

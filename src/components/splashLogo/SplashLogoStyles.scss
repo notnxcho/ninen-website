@@ -21,6 +21,11 @@
     animation-delay: .3s;
     animation-fill-mode: forwards;
     pointer-events: none;
+
+    &.animation-ended {
+        display: none;
+    }
+
     .col {
         display: flex;
         flex-direction: column;

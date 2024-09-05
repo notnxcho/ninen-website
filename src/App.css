@@ -6,5 +6,9 @@
   font-family: "Space Grotesk", sans-serif;
   box-sizing: border-box
 }
+*::selection {
+  background-color: #d4eee5;
+  color: #0d7165;
+} 
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');

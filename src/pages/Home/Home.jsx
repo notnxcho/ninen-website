@@ -16,9 +16,8 @@ import { useInView } from 'react-intersection-observer';
 import ContainerBannerWrap from '../../components/containerBannerWrap/containerBannerWrap';
 import SplashLogo from '../../components/splashLogo/SplashLogo';
 import { getStartedClick, scrollToSection } from '../../customHooks';
-import Owner from '../../components/owner/owner';
 import BentoGrid from '../../components/bentoGrid/BentoGrid';
-
+import WorkHistory from '../../components/workHistory/WorkHistory';
 
 const Home = () => {
     const { ref, inView } = useInView({
@@ -97,6 +96,7 @@ const Home = () => {
                 </div>
             </div>
             <PortfolioHomeSection/>
+            <WorkHistory/>
             <CtaBannerSection 
                 displayText={'Are you ready for your next smart move?'}
                 ctaText={'Work with me'}

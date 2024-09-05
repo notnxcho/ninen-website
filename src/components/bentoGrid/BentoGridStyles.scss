@@ -51,7 +51,7 @@
     }
     &.primary {
       background-color: #006161;
-      background-image: url('../../assets/primary-bento-bg.png');
+      background-image: url('../../assets/primary-bento-highlighted-bg.png');
       background-size: cover;
       background-position: center;
       color: white;
@@ -66,7 +66,12 @@
         color: rgba(255, 255, 255, 0.8);
         margin-right: 16px;
         z-index: 2;
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+      @media (max-width: 610px) {
+        p {
+          font-size: 16px;
+        }
       }
       .bg-highlight {
         position: absolute;

@@ -40,7 +40,20 @@ const LiquidStashContent = () => {
                     </div>
                 </div>
             </div>
-            <CaseUnderConstruction />
+            <div className="text-block-section-wrap">
+                <div className="text-block-content container container-border">
+                    <div className="heading">UX impact in the business</div>
+                    <div className="description">
+                        <p>
+                            We found through or reasearch and feedback from the early prototypes that the funds valued the modularization of the platform, and from then on that'd be what would drive the design to achieve PMF. Being able to personalize the data models and display in a dashboard tailored for their investors and account managers.
+                        </p>
+                        <p>
+                            The prototype was absolutely crucial to pitch the product and demonstrate value to prospect clients and investors, which ended up in locking-in a contract with a fund that would invest and act as a product champion since they actively contributed to the product's development and success beyond just financial investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {/* <CaseUnderConstruction /> */}
         </div>
     )
 }

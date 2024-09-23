@@ -1,6 +1,7 @@
 import './SplashLogoStyles.scss'
 
 const SplashLogo = () => {
+
     return (
         <div className='logo-box'>
             <div className='col'>

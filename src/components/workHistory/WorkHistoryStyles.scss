@@ -1,0 +1,132 @@
+.work-history-gradient-box {
+    background: url('../../assets/performant-background.svg') no-repeat top left;
+    min-height: 72vh;
+    background-size: cover;
+    width: calc(100% - 32px);
+    border-radius: 16px;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 44px 24px;
+    margin-bottom: 64px;
+    place-content: center;
+    .title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 40px;
+        color: white;
+        position: relative;
+        padding-bottom: 24px;
+        &::before {
+            content: "";
+            position: absolute;
+            max-width: 400px;
+            bottom: 4px;
+            height: 2px;
+            width: 120%;
+            background: linear-gradient(90deg, rgba(14, 76, 69, 0) 0%, rgba(38, 141, 129, 0.6666666667) 50%, rgba(14, 76, 69, 0) 100%);
+        }
+        .title {
+            font-weight: 500;
+            font-size: 28px;
+        }
+        .subtitle {
+            font-weight: 400;
+            font-size: 18px;
+            opacity: 0.6;
+        }
+    }
+    .bento-grid {
+        grid-template-columns: repeat(8, 1fr);
+        margin: 0px;
+        padding: 0px 16px;
+
+        .card {
+            color: white;
+            display: flex;
+            // background: rgba(255, 255, 255, 0.12);
+            // background-image: radial-gradient(farthest-side at 0% 100%, #ecfffd30 0%, #d4ffff0c 100%);
+            background: rgba(60, 60, 60, 0.08);
+            background-image: radial-gradient(farthest-side at 0% 100%, #0713115f 0%, #00000029 100%);
+            .timeframe {
+                font-weight: 400;
+                font-size: 14px;
+                color: inherit;
+                opacity: 0.6;
+                margin-bottom: 4px;
+
+            }
+            .title {
+                font-weight: 500;
+                font-size: 24px;
+                color: inherit;
+            }
+            .company {
+                font-weight: 600;
+                font-size: 18px;
+                color: rgb(56, 237, 167);
+            }
+            .description-box {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 16px;
+                .description-item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    .header {
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    .content {
+                        font-weight: 400;
+                        font-size: 16px;
+                        opacity: 0.8;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            .cta {
+                margin-top: auto;
+                gap: 12px;
+                width: max-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+                background-color: black;
+            }
+            &:nth-child(5) {
+                background: white;
+                color: black;
+                min-height: 260px;
+                .company {
+                    color: rgb(7, 177, 112);
+                }
+            }
+        }
+    }
+    @media (max-width: 880px) {
+        margin: 12px;
+        margin-bottom: 64px;
+        .bento-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 24px;
+            .card {
+                width: 100%;
+                .title {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

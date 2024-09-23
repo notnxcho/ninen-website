@@ -8,7 +8,7 @@ const WorkHistory = () => {
         {
             size: {x: 4, y: 2},
             timeframe: 'Jun 2019 - Mar 2021',
-            title: 'Fulltime Dev & Design Freelancer',
+            title: 'Frontend Dev & Design Freelancer',
             company: '10+ clients',
             description: []
         },
